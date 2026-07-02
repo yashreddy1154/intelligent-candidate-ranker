@@ -170,6 +170,55 @@ def is_honeypot(cand: Dict[str, Any]) -> bool:
 
     return indicators >= 3
 
+def phase1_filter(cand: Dict[str, Any]) -> bool:
+    """
+    Fast elimination pass. Returns True if candidate should be scored.
+    Discards obvious non-fits quickly to speed up execution.
+    """
+    # 1. Honeypot check
+    if is_honeypot(cand):
+        return False
+
+    profile = cand.get("profile", {})
+    signals = cand.get("redrob_signals", {})
+    yoe = profile.get("years_of_experience", 0)
+
+    # 2. Experience constraint
+    if yoe < 3.0 or yoe > 15.0:
+        return False
+
+    # 3. Completely inactive
+    last_act = signals.get("last_active_date", "")
+    days_since_active = _days_since(last_act)
+    if days_since_active > 240:
+        return False
+
+    # 4. Keyword stuffers (non-technical title and lots of skills matches)
+    title = (profile.get("current_title") or "").strip().lower()
+    is_non_tech = any(nt in title for nt in NON_TECH_TITLES)
+    
+    # Check if they have AI skills but are in a non-tech title
+    skills = cand.get("skills", [])
+    matched_skills_count = sum(1 for s in skills if s.get("name", "").strip().lower() in AI_ML_SKILLS)
+    if is_non_tech and matched_skills_count >= 3:
+        return False
+
+    # 5. Career history relevance (requires at least one AI/ML keyword in title or description)
+    career = cand.get("career_history", [])
+    career_ml_text_found = False
+    for job in career:
+        job_desc = (job.get("description") or "").strip().lower()
+        job_title = (job.get("title") or "").strip().lower()
+        combined_job = job_title + " " + job_desc
+        if any(kw in combined_job for kw in AI_ML_CAREER_KEYWORDS):
+            career_ml_text_found = True
+            break
+            
+    if not career_ml_text_found:
+        return False
+
+    return True
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 3. SCORING MECHANISMS
 # ─────────────────────────────────────────────────────────────────────────────
@@ -525,6 +574,8 @@ def main():
             with open(args.candidates, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 for cand in data:
+                    if not phase1_filter(cand):
+                        continue
                     score, breakdown = score_candidate(cand)
                     if score > 0.0:
                         scored_candidates.append((cand["candidate_id"], score, breakdown))
@@ -536,6 +587,8 @@ def main():
                     if not line:
                         continue
                     cand = json.loads(line)
+                    if not phase1_filter(cand):
+                        continue
                     score, breakdown = score_candidate(cand)
                     if score > 0.0:
                         scored_candidates.append((cand["candidate_id"], score, breakdown))

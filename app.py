@@ -629,7 +629,6 @@ def build_app() -> gr.Blocks:
                     interactive=False,
                     height=100,
                     width=100,
-                    show_download_button=False,
                     container=False,
                 )
             with gr.Column(elem_id="hero-text"):
