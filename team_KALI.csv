@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0018499,1,0.9735,"Senior resource with 7.2 yrs experience; core expertise in RAG; strong platform signals (response rate of 61%) and local in Noida, Uttar Pradesh."
+CAND_0027691,2,0.9678,"Senior resource with 6.5 yrs experience; core expertise in TensorFlow, Python; strong platform signals (replies to 68% of messages) and local in Pune, Maharashtra."
+CAND_0002025,3,0.9651,"Exceptional ML engineer with 5.9 years in the field. Shipped systems using TensorFlow, NLP, Python at Apple. Willing to relocate (notice is 30 days)."
+CAND_0081846,4,0.9595,"Exceptional ML engineer with 6.7 years in the field. Shipped systems using PyTorch, Python at Razorpay. Willing to relocate (notice period: 30 days)."
+CAND_0071974,5,0.9573,Senior resource with 7.8 yrs experience; core expertise in RAG; strong platform signals (76% response rate) and relocation candidate.
+CAND_0077337,6,0.9529,"Exceptional ML engineer with 7.0 years in the field. Shipped systems using LLMs, RAG, Python at Paytm. Willing to relocate (notice period: 60 days)."
+CAND_0088025,7,0.9476,"Strong Staff Machine Learning Engineer with 8.6 years of experience at Yellow.ai, focusing on LLMs, RAG, TensorFlow; highly active (response rate of 83%) and open to relocation."
+CAND_0050454,8,0.9469,"Exceptional ML engineer with 6.8 years in the field. Shipped systems using PyTorch, NLP, LLMs at Rephrase.ai. Willing to relocate (requires 30 days notice)."
+CAND_0010257,9,0.9429,"Exceptional ML engineer with 6.5 years in the field. Shipped systems using TensorFlow, Python at Google. Located in noida, uttar pradesh (notice period: 120 days)."
+CAND_0005649,10,0.9426,"Exceptional ML engineer with 7.4 years in the field. Shipped systems using TensorFlow, RAG at Sarvam AI. Willing to relocate (90-day notice period)."
+CAND_0069905,11,0.9414,"Solid Applied Ml Engineer showing 6.6 years of experience at Sarvam AI; strong skills in TensorFlow, Python and good engagement signals."
+CAND_0080766,12,0.9395,"ML engineer with 8.8 yrs experience. Has done production work with Python, TensorFlow. Willing to relocate with notice period: 0 days."
+CAND_0052682,13,0.9387,"Solid Nlp Engineer showing 6.6 years of experience at Aganitha; strong skills in PyTorch, LLMs, Python and good engagement signals."
+CAND_0015578,14,0.9373,"Solid Ai Engineer showing 5.4 years of experience at Zoho; strong skills in NLP, RAG and good engagement signals."
+CAND_0044855,15,0.9368,Solid Senior Data Scientist showing 6.6 years of experience at Flipkart; strong skills in NLP and good engagement signals.
+CAND_0058688,16,0.9363,Solid Ai Engineer showing 6.7 years of experience at Vedantu; strong skills in TensorFlow and good engagement signals.
+CAND_0030031,17,0.9359,"Backend and ML specialist with 5.7 years of experience, specializing in PyTorch, Python, NLP; matches hybrid requirements with notice period: 30 days."
+CAND_0029367,18,0.9356,"ML engineer with 5.7 yrs experience. Has done production work with TensorFlow, RAG, NLP. Willing to relocate with notice period: 90 days."
+CAND_0016163,19,0.9354,Solid Applied Ml Engineer showing 6.7 years of experience at Dream11; strong skills in TensorFlow and good engagement signals.
+CAND_0005260,20,0.9352,"Backend and ML specialist with 5.2 years of experience, specializing in Python, NLP, RAG; matches hybrid requirements with notice is 60 days."
+CAND_0068351,21,0.9346,"Solid Lead Ai Engineer showing 6.4 years of experience at Sarvam AI; strong skills in Python, NLP and good engagement signals."
+CAND_0020877,22,0.9342,ML engineer with 5.1 yrs experience. Has done production work with PyTorch. Willing to relocate with 60-day notice period.
+CAND_0042029,23,0.9335,"Solid Senior Data Scientist showing 6.5 years of experience at Flipkart; strong skills in PyTorch, NLP, RAG and good engagement signals."
+CAND_0049538,24,0.9333,"Solid Applied Ml Engineer showing 5.8 years of experience at Saarthi.ai; strong skills in LLMs, PyTorch and good engagement signals."
+CAND_0008425,25,0.9327,"Backend and ML specialist with 7.8 years of experience, specializing in NLP, TensorFlow, Python; matches hybrid requirements with notice period: 90 days."
+CAND_0037566,26,0.9302,"ML engineer with 6.9 yrs experience. Has done production work with NLP, TensorFlow, LLMs. Willing to relocate with notice period: 15 days."
+CAND_0024990,27,0.9270,"ML engineer with 5.2 yrs experience. Has done production work with NLP, LLMs. Willing to relocate with 60-day notice period."
+CAND_0008239,28,0.9251,"Backend and ML specialist with 4.0 years of experience, specializing in Python, PyTorch; matches hybrid requirements with requires 15 days notice."
+CAND_0099806,29,0.9245,Solid Ai Engineer showing 4.6 years of experience at Mad Street Den; strong skills in RAG and good engagement signals.
+CAND_0070398,30,0.9224,"ML engineer with 7.2 yrs experience. Has done production work with RAG, PyTorch, Python. Willing to relocate with notice period: 120 days."
+CAND_0066376,31,0.9209,"Backend and ML specialist with 5.7 years of experience, specializing in LLMs, NLP; matches hybrid requirements with 90-day notice period."
+CAND_0011687,32,0.9203,"Solid Senior Nlp Engineer showing 7.8 years of experience at Niramai; strong skills in TensorFlow, PyTorch and good engagement signals."
+CAND_0064904,33,0.9202,"Solid Ai Engineer showing 4.9 years of experience at LinkedIn; strong skills in LLMs, Python, TensorFlow and good engagement signals."
+CAND_0094056,34,0.9175,"ML engineer with 5.9 yrs experience. Has done production work with MLflow, Pinecone, Milvus. Willing to relocate with 120-day notice period."
+CAND_0007412,35,0.9172,"Solid Applied Ml Engineer showing 7.4 years of experience at Zoho; strong skills in PyTorch, RAG and good engagement signals."
+CAND_0095528,36,0.9150,"Solid Senior Data Scientist showing 5.3 years of experience at Netflix; strong skills in PyTorch, Python, RAG and good engagement signals."
+CAND_0006418,37,0.9119,"Backend and ML specialist with 5.7 years of experience, specializing in TensorFlow; matches hybrid requirements with notice period: 60 days."
+CAND_0045250,38,0.9118,"Backend and ML specialist with 6.6 years of experience, specializing in NLP, TensorFlow, LLMs; matches hybrid requirements with 15-day notice period."
+CAND_0068811,39,0.9114,"ML engineer with 8.0 yrs experience. Has done production work with TensorFlow. Located in pune, maharashtra with 30-day notice period."
+CAND_0051630,40,0.9096,"ML engineer with 6.0 yrs experience. Has done production work with Python, NLP. Willing to relocate with notice period: 90 days."
+CAND_0081053,41,0.9091,"Solid Nlp Engineer showing 5.4 years of experience at Glance; strong skills in LoRA, Qdrant, Machine Learning and good engagement signals."
+CAND_0042100,42,0.9079,"Backend and ML specialist with 7.3 years of experience, specializing in LLMs, PyTorch; matches hybrid requirements with notice period: 90 days."
+CAND_0009691,43,0.9075,"Backend and ML specialist with 6.2 years of experience, specializing in Recommendation Systems, Fine-tuning LLMs, LoRA; matches hybrid requirements with notice is 120 days."
+CAND_0072660,44,0.9055,"ML engineer with 7.1 yrs experience. Has done production work with PyTorch, Python, NLP. Willing to relocate with notice is 30 days."
+CAND_0046525,45,0.9043,"Backend and ML specialist with 6.1 years of experience, specializing in TensorFlow, LLMs, NLP; matches hybrid requirements with requires 60 days notice."
+CAND_0070202,46,0.9038,"Solid Machine Learning Engineer showing 5.1 years of experience at BYJU'S; strong skills in PyTorch, RAG, NLP and good engagement signals."
+CAND_0047721,47,0.8993,"ML engineer with 7.0 yrs experience. Has done production work with RAG, NLP. Willing to relocate with notice is 90 days."
+CAND_0050876,48,0.8975,"Solid Applied Ml Engineer showing 6.0 years of experience at Freshworks; strong skills in Python, PyTorch and good engagement signals."
+CAND_0001819,49,0.8970,"Backend and ML specialist with 4.4 years of experience, specializing in PyTorch, RAG, NLP; matches hybrid requirements with notice period: 60 days."
+CAND_0021491,50,0.8956,"Solid Ai Research Engineer showing 6.1 years of experience at Wysa; strong skills in Python, PyTorch and good engagement signals."
+CAND_0062247,51,0.8945,Software developer with 7.3 yrs experience transitioning to ML. Has RAG skills but limited production AI history.
+CAND_0074735,52,0.8929,"Competent Applied Ml Engineer with 5.5 yrs experience; has skills in RAG, TensorFlow but note a longer notice period (requires 90 days notice)."
+CAND_0008978,53,0.8927,Competent Junior Ml Engineer with 6.7 yrs experience; has skills in NLP but note a longer notice period (90-day notice period).
+CAND_0079284,54,0.8927,Software developer with 4.9 yrs experience transitioning to ML. Has NLP skills but limited production AI history.
+CAND_0032515,55,0.8922,Engineer with 5.1 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0091254,56,0.8920,"Software developer with 5.2 yrs experience transitioning to ML. Has NLP, Python, PyTorch skills but limited production AI history."
+CAND_0074731,57,0.8902,Engineer with 6.6 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0007460,58,0.8889,"Competent Ai Engineer with 4.7 yrs experience; has skills in RAG, NLP but note a longer notice period (notice is 120 days)."
+CAND_0075574,59,0.8861,Engineer with 5.7 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0072688,60,0.8857,"Engineer with 6.9 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (local in Pune, Maharashtra)."
+CAND_0007052,61,0.8851,Competent Ml Engineer with 6.5 yrs experience; has skills in RAG but note a longer notice period (requires 60 days notice).
+CAND_0061655,62,0.8847,"Competent Machine Learning Engineer with 4.6 yrs experience; has skills in PyTorch, NLP but note a longer notice period (notice period: 15 days)."
+CAND_0074225,63,0.8844,Competent Machine Learning Engineer with 4.3 yrs experience; has skills in Python but note a longer notice period (120-day notice period).
+CAND_0006557,64,0.8830,"Competent Nlp Engineer with 7.9 yrs experience; has skills in Data Science, Elasticsearch, Weaviate but note a longer notice period (notice period: 120 days)."
+CAND_0022812,65,0.8819,"Software developer with 4.5 yrs experience transitioning to ML. Has NLP, LLMs, TensorFlow skills but limited production AI history."
+CAND_0065878,66,0.8817,Engineer with 7.8 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0013613,67,0.8811,Competent Machine Learning Engineer with 4.7 yrs experience; has skills in TensorFlow but note a longer notice period (requires 60 days notice).
+CAND_0015528,68,0.8811,Software developer with 7.4 yrs experience transitioning to ML. Has TensorFlow skills but limited production AI history.
+CAND_0078002,69,0.8807,"Competent Machine Learning Engineer with 6.3 yrs experience; has skills in TensorFlow, NLP but note a longer notice period (notice is 60 days)."
+CAND_0006567,70,0.8784,"Software developer with 7.9 yrs experience transitioning to ML. Has NLP, Python skills but limited production AI history."
+CAND_0082913,71,0.8784,"Competent Senior Software Engineer (Ml) with 5.5 yrs experience; has skills in LLMs, TensorFlow but note a longer notice period (notice period: 45 days)."
+CAND_0044883,72,0.8763,"Software developer with 6.3 yrs experience transitioning to ML. Has TensorFlow, PyTorch skills but limited production AI history."
+CAND_0098846,73,0.8753,Competent Ai Engineer with 7.6 yrs experience; has skills in TensorFlow but note a longer notice period (notice period: 45 days).
+CAND_0002344,74,0.8743,Engineer with 4.7 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0005269,75,0.8736,Engineer with 6.1 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0039383,76,0.8716,Competent Applied Ml Engineer with 7.1 yrs experience; has skills in NLP but note a longer notice period (requires 90 days notice).
+CAND_0040887,77,0.8716,Software developer with 4.7 yrs experience transitioning to ML. Has Python skills but limited production AI history.
+CAND_0007391,78,0.8714,"Competent Data Scientist with 4.3 yrs experience; has skills in Python, TensorFlow, PyTorch but note a longer notice period (90-day notice period)."
+CAND_0011125,79,0.8708,Engineer with 6.6 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0010541,80,0.8703,"Competent Ai Research Engineer with 6.2 yrs experience; has skills in Python, NLP but note a longer notice period (notice period: 60 days)."
+CAND_0055905,81,0.8699,"Software developer with 8.1 yrs experience transitioning to ML. Has Python, LLMs skills but limited production AI history."
+CAND_0005538,82,0.8683,"Software developer with 5.9 yrs experience transitioning to ML. Has Python, PyTorch skills but limited production AI history."
+CAND_0096142,83,0.8682,Engineer with 5.0 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0091745,84,0.8680,Competent Junior Ml Engineer with 5.9 yrs experience; has skills in PyTorch but note a longer notice period (requires 30 days notice).
+CAND_0059017,85,0.8674,Engineer with 6.8 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0036484,86,0.8672,Engineer with 5.7 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0081321,87,0.8666,"Software developer with 5.3 yrs experience transitioning to ML. Has Python, PyTorch skills but limited production AI history."
+CAND_0089552,88,0.8661,Competent Machine Learning Engineer with 6.0 yrs experience; has skills in TensorFlow but note a longer notice period (notice is 120 days).
+CAND_0032807,89,0.8658,"Competent Machine Learning Engineer with 4.2 yrs experience; has skills in Python, LLMs but note a longer notice period (90-day notice period)."
+CAND_0003791,90,0.8656,"Competent Ml Engineer with 6.6 yrs experience; has skills in LLMs, PyTorch, Python but note a longer notice period (45-day notice period)."
+CAND_0046353,91,0.8646,"Software developer with 6.4 yrs experience transitioning to ML. Has PyTorch, NLP skills but limited production AI history."
+CAND_0076904,92,0.8640,"Competent Senior Data Scientist with 4.2 yrs experience; has skills in NLP, LLMs but note a longer notice period (requires 90 days notice)."
+CAND_0010685,93,0.8639,"Competent Nlp Engineer with 6.7 yrs experience; has skills in PyTorch, RAG but note a longer notice period (30-day notice period)."
+CAND_0092181,94,0.8632,"Software developer with 4.6 yrs experience transitioning to ML. Has PyTorch, LLMs, NLP skills but limited production AI history."
+CAND_0001610,95,0.8629,"Competent Machine Learning Engineer with 3.0 yrs experience; has skills in NLP, PyTorch but note a longer notice period (90-day notice period)."
+CAND_0013393,96,0.8629,Engineer with 5.3 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0070525,97,0.8611,Engineer with 5.4 yrs experience; matches core Python/ML requirements but location is remote/outside NCR/Pune (relocation candidate).
+CAND_0083879,98,0.8597,"Competent Machine Learning Engineer with 7.1 yrs experience; has skills in MLOps, Fine-tuning LLMs, Milvus but note a longer notice period (notice period: 30 days)."
+CAND_0076412,99,0.8581,Competent Ai Research Engineer with 5.8 yrs experience; has skills in Python but note a longer notice period (120-day notice period).
+CAND_0098288,100,0.8579,"Competent Junior Ml Engineer with 6.7 yrs experience; has skills in RAG, NLP, Python but note a longer notice period (notice period: 60 days)."
