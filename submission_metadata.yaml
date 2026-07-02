@@ -19,7 +19,7 @@ team_members:
 # ============================================================================
 # Code and reproducibility
 # ============================================================================
-github_repo: "https://github.com/yash1154/intelligent-candidate-ranker"
+github_repo: "https://github.com/yashreddy1154/intelligent-candidate-ranker"
 
 sandbox_link: "https://huggingface.co/spaces/yash1154/intelligent-candidate-ranker"
 

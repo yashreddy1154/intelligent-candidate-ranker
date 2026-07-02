@@ -232,7 +232,7 @@ for shape in slide10.shapes:
         shape.text = (
             "Submission Assets & Links:\n\n"
             "• GitHub Repository:\n"
-            "  https://github.com/yash1154/intelligent-candidate-ranker\n"
+            "  https://github.com/yashreddy1154/intelligent-candidate-ranker\n"
             "  Contains the fully reproducible ranking script, README instructions, and validation suite.\n\n"
             "• HuggingFace Spaces Web Sandbox:\n"
             "  https://huggingface.co/spaces/yash1154/intelligent-candidate-ranker\n"

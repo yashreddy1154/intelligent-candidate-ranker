@@ -72,7 +72,7 @@ An intelligent candidate ranking system that identifies the **top 100 candidates
 
 ```bash
 # Clone the repository
-git clone https://github.com/yash1154/intelligent-candidate-ranker.git
+git clone https://github.com/yashreddy1154/intelligent-candidate-ranker.git
 cd intelligent-candidate-ranker
 
 # Run the ranker (produces submission.csv)
@@ -149,8 +149,8 @@ intelligent-candidate-ranker/
 
 ## ⚡ Performance
 
-- **Runtime**: ~30 seconds for 100K candidates on CPU
-- **Memory**: <2 GB RAM usage
+- **Runtime**: ~10.7 seconds for 100K candidates on CPU
+- **Memory**: < 100 MB RAM (0.06 GB) usage
 - **No GPU required**
 - **No network calls during ranking**
 
