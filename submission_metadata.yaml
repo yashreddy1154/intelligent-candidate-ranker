@@ -1,0 +1,77 @@
+# Redrob Hackathon — Submission Metadata
+# Team KALI
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "KALI"
+
+primary_contact:
+  name: "P Yashwanth Reddy"
+  email: "yashwanthreddy1154@gmail.com"
+  phone: "+91-9640044724"
+
+team_members:
+  - name: "P Yashwanth Reddy"
+    email: "yashwanthreddy1154@gmail.com"
+    role: "Solo Participant - ML Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/yash1154/intelligent-candidate-ranker"
+
+sandbox_link: "https://huggingface.co/spaces/yash1154/intelligent-candidate-ranker"
+
+reproduce_command: "python rank.py --candidates ./res/candidates.jsonl.gz --out ./submission.csv"
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.10"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Claude"
+
+ai_usage_summary: |
+  Used Gemini (Antigravity agent) for code scaffolding, architecture discussion,
+  and development workflow. Claude used for code review and optimization.
+  All ranking logic was designed and iterated by the human participant.
+  No candidate data was fed to any LLM during ranking.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  Rule-based multi-factor weighted scoring system with explicit honeypot
+  detection. Six scoring components: title/career relevance (35%), skills
+  match with cross-validation against career history (25%), experience fit
+  (15%), behavioral signals from Redrob platform (15%), location/logistics
+  (5%), and education (5%). The title/career component is the primary defense
+  against keyword-stuffer traps — we check actual job titles and career
+  descriptions, not just skill lists. Honeypot detection flags impossible
+  profiles (expert skills with zero usage, impossible tenure durations).
+  Runtime is ~30 seconds for 100K candidates on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
