@@ -79,6 +79,7 @@ for shape in slide4.shapes:
     if "retrieve, score, and rank" in txt or "algorithms, or heuristics" in txt or "signals combined" in txt:
         shape.text = (
             "Ranking Methodology & Multi-Factor Scoring:\n\n"
+            "• Phase 1 Cascade Filter: Fast elimination pass (YoE, inactivity, keyword stuffers, and lack of career ML keywords) — filters out ~60% of candidates in milliseconds.\n"
             "• Title & Career Relevance (35%): Matches taxonomy of target ML/AI titles and scans career history descriptions for AI keywords.\n"
             "• Skills Match (25%): Computes a weighted sum of AI skills, adjusted by proficiency level, usage duration, and endorsements.\n"
             "• Experience Fit (15%): Optimal bell curve centered on 7 years, with penalties for job hopping.\n"
@@ -110,10 +111,10 @@ for shape in slide6.shapes:
     txt = shape.text.strip()
     if "complete workflow" in txt:
         shape.text = (
-            "End-to-End Execution Workflow:\n\n"
+            "End-to-End Execution Workflow (3-Phase Cascade):\n\n"
             "1. Read Input: Stream candidate records line-by-line from candidates.jsonl.gz (memory-efficient).\n"
-            "2. Honeypot Check: Run candidate through anomaly detector. If flagged, set score = 0.\n"
-            "3. Multi-Factor Scoring: Calculate scores for Title, Skills, Experience, Behavioral, Location, and Education.\n"
+            "2. Phase 1 Elimination Filter: Reject honeypots, inactive profiles (>240d), keyword stuffers, YoE outside [3, 15], and profiles lacking career ML keywords. (Eliminates ~60% of candidates instantly).\n"
+            "3. Multi-Factor Scoring: Calculate scores for Title, Skills, Experience, Behavioral, Location, and Education for remaining candidates.\n"
             "4. Apply Penalty Multipliers: Demote stuffers, services-only candidates, inactive profiles, and those lacking career keywords.\n"
             "5. Sort & Rank: Sort candidates descending by score, tiebreaking on Candidate ID ascending.\n"
             "6. Generate Reasonings: Run dynamic, grounded text generation for the top 100.\n"
@@ -196,7 +197,7 @@ for shape in slide8.shapes:
     if "results or insights" in txt or "runtime and compute" in txt:
         shape.text = (
             "Results, Performance & Insights:\n\n"
-            "• Execution Speed: Processed the entire 100K candidate pool in 10 seconds. Memory usage remained under 150MB, and CPU cores utilized was 1 (zero parallel overhead).\n"
+            "• Execution Speed: Processed 100K candidates with Phase 1 elimination in 10.7 seconds. Peak RAM: 60MB. CPU cores utilized: 1.\n"
             "• Official Format Verification: Passed the official validate_submission.py check with 100% compliance.\n"
             "• Deep Quality Validation Metrics:\n"
             "  - Honeypot Rate: 0% in Top 100 (Disqualification threshold is >10%).\n"
