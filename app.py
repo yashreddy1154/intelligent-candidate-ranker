@@ -768,8 +768,10 @@ weighted sum, also on a 0–1 scale.
 
 if __name__ == "__main__":
     app = build_app()
+    # Bind to 127.0.0.1 locally so links are clickable on Windows, but use 0.0.0.0 in HuggingFace Spaces
+    is_hf = "SPACE_ID" in os.environ
     app.launch(
-        server_name="0.0.0.0",
+        server_name="0.0.0.0" if is_hf else "127.0.0.1",
         server_port=7860,
         share=False,
         show_error=True,

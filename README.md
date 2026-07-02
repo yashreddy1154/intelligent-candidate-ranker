@@ -20,15 +20,18 @@ An intelligent candidate ranking system that identifies the **top 100 candidates
                        │
                        ▼
 ┌─────────────────────────────────────────────────────┐
-│              HONEYPOT DETECTION                      │
-│  • Impossible experience durations                   │
-│  • Expert skills with 0 months usage                 │
-│  • Inconsistent career timelines                     │
+│          PHASE 1: FAST ELIMINATION FILTER            │
+│  • Honeypot Anomaly Detection                       │
+│  • Experience Bounds Verification (3 - 15 yrs)      │
+│  • Activity Recency check (last active <= 240 days)  │
+│  • Keyword Stuffer rejection                        │
+│  • Career ML Keyword presence validation             │
+│  • Discards ~60% of candidates in milliseconds      │
 └──────────────────────┬──────────────────────────────┘
                        │
                        ▼
 ┌─────────────────────────────────────────────────────┐
-│           MULTI-FACTOR SCORING ENGINE                │
+│       PHASE 2: MULTI-FACTOR SCORING ENGINE           │
 │                                                      │
 │  ┌──────────────────┐  ┌──────────────────┐         │
 │  │ Title & Career   │  │ Skills Match     │         │
@@ -46,10 +49,10 @@ An intelligent candidate ranking system that identifies the **top 100 candidates
                        │
                        ▼
 ┌─────────────────────────────────────────────────────┐
-│           REASONING GENERATION                       │
-│  • Specific facts from candidate profile             │
-│  • Connection to JD requirements                     │
-│  • Honest acknowledgment of gaps                     │
+│          PHASE 3: REASONING GENERATION               │
+│  • Grounded in specific profile attributes          │
+│  • Acknowledges gaps and matches JD requirements     │
+│  • Randomized sentence structures to prevent dupes   │
 └──────────────────────┬──────────────────────────────┘
                        │
                        ▼
@@ -80,6 +83,9 @@ python validation/validate_submission.py submission.csv
 
 # Deep validation (honeypot check, quality check)
 python validation/deep_validate.py --csv submission.csv --candidates ./res/candidates.jsonl.gz
+
+# Verify technical constraints (peak RAM, execution time, network sockets)
+python validation/test_constraints.py --candidates ./res/candidates.jsonl.gz --out ./submission.csv
 ```
 
 ### Run the Demo (Gradio)
@@ -88,6 +94,8 @@ python validation/deep_validate.py --csv submission.csv --candidates ./res/candi
 pip install gradio
 python app.py
 ```
+
+*Note: Locally, the app binds to `127.0.0.1` so you can open it directly via `http://localhost:7860/` on Windows. In a HuggingFace Space environment, it binds to `0.0.0.0` automatically.*
 
 Or visit the live demo: [HuggingFace Spaces](https://huggingface.co/spaces/yash1154/intelligent-candidate-ranker)
 
@@ -106,13 +114,15 @@ Or visit the live demo: [HuggingFace Spaces](https://huggingface.co/spaces/yash1
 
 ### Key Design Decisions
 
-1. **Career history > Skill keywords**: We prioritize what candidates have *actually done* (titles, career descriptions) over what they *claim* in their skills list. This catches keyword-stuffer traps.
+1. **3-Phase Cascade Elimination**: Speeds up the engine by filtering out ~60,000 obviously unqualified candidates in Phase 1 (checking honeypots, inactivity, stuffer metrics) before executing full scoring.
 
-2. **Behavioral signals as a multiplier**: A perfect-on-paper candidate who is unresponsive or inactive is, for practical hiring purposes, unavailable.
+2. **Career history > Skill keywords**: We prioritize what candidates have *actually done* (titles, career descriptions) over what they *claim* in their skills list. This catches keyword-stuffer traps.
 
-3. **Honeypot detection**: Explicit checks for impossible profiles before scoring, preventing them from polluting the top 100.
+3. **Behavioral signals as a multiplier**: A perfect-on-paper candidate who is unresponsive or inactive is, for practical hiring purposes, unavailable.
 
-4. **No ML models required**: Pure rule-based scoring runs in seconds on CPU, well within the 5-minute constraint.
+4. **Honeypot detection**: Explicit checks for impossible profiles before scoring, preventing them from polluting the top 100.
+
+5. **No ML models required**: Pure rule-based scoring runs in seconds on CPU, well within the 5-minute constraint.
 
 ## 📁 Project Structure
 
