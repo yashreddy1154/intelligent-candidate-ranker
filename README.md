@@ -1,3 +1,14 @@
+---
+title: Intelligent Candidate Ranker
+emoji: 🔱
+colorFrom: indigo
+colorTo: purple
+sdk: gradio
+sdk_version: 5.8.0
+app_file: app.py
+pinned: false
+---
+
 # 🔱 KALI — Intelligent Candidate Discovery & Ranking System
 
 > **Team KALI** | Redrob Hackathon — Intelligent Candidate Discovery & Ranking Challenge
